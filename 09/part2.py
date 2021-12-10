@@ -46,4 +46,5 @@ def main():
         checked = []
         basinSizes.append(basin_size(map, x, y))
     print(reduce(lambda a,b: a*b, sorted(basinSizes)[-3:]))
+
 main()

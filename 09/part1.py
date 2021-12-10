@@ -3,7 +3,7 @@ def parse_input(filename):
         return [
             [int(i) for i in line.rstrip()] for line in file
         ]
-        
+
 def main():
     map = parse_input("09/inputs.txt")
     lowPoints = []
@@ -21,8 +21,5 @@ def main():
             if map[y][x] < min(adjacent):
                 lowPoints.append((x,y))
     print(sum([map[y][x]+1 for (x,y) in lowPoints]))
-
-
-
 
 main()
