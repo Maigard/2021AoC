@@ -17,7 +17,7 @@ def insert_pair(polymer: "str", rules:"dict") -> "str":
     return newPolymer
 
 def main():
-    (polymer, rules) = parse_input("14/sampleinputs.txt")
+    (polymer, rules) = parse_input("14/inputs.txt")
     for i in range(10):
         polymer = insert_pair(polymer, rules)
     count = Counter(polymer)
